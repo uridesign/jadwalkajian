@@ -1,0 +1,25 @@
+.hidden-area {
+  display: none;
+}
+#report_message {
+  position: fixed;
+  top: 18%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 290px;
+  text-align: center;
+  z-index: 10;
+}
+.alert {
+  position: relative;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}

@@ -1,0 +1,28 @@
+textarea.preview {
+  width: 100%;
+  min-height: 200px;
+}
+
+.form {
+  &-item {
+    margin-bottom: 1em;
+    label {
+      display: block;
+      margin-bottom: .3em;
+    }
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;
+    border: 1px solid $color-1;
+  }
+
+  input[type="text"] {
+    padding: 0.8645em 20px;
+  }
+
+  select {
+    padding: 1.018em 17px;
+  }
+}

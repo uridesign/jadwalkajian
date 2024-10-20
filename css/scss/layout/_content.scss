@@ -1,0 +1,33 @@
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+img {
+  max-width: 100%;
+  border: none;
+}
+img.hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content_center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  @include media-breakpoint-up(md) {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
