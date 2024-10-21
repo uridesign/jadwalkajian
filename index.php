@@ -31,6 +31,7 @@
   <main>
     <div class="py-5">
       <div class="wrapper">
+        <h1 class="h2 mb-5">Kajian Mendatang</h1>
         <div class="row">
           <?php 
             if ($result->num_rows > 0) {

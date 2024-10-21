@@ -54,7 +54,7 @@
             <div class="col-12 mb-3 col-md-6 mb-md-0">
               <div class="mb-3">
                 <label for="">Preview Whatsapp</label>
-                <textarea name="code" id="code" class="preview"></textarea>
+                <textarea name="code" id="code" class="preview" disabled></textarea>
               </div>
               <div>
                 <a href="javascript:;" id="copy" class="btn button-1">Copy to WhatsApp</a>
@@ -64,7 +64,7 @@
               <form id="preview_send_tg" action="post_kajian.php" method="POST">
                 <div class="mb-3">
                   <label for="">Preview Telegram</label>
-                  <textarea name="code_tg" id="code_tg" class="preview"></textarea>
+                  <textarea name="code_tg" id="code_tg" class="preview" disabled></textarea>
                 </div>
                 <div>
                   <button type="submit" class="btn button-1">Send to Telegram</button>
@@ -120,7 +120,7 @@
 
     var hj = moment(date).add(hijriAdjust, 'd').format('iD iMMMM iYYYY');
 
-    var copy_text = '<br><br>*📢 INFO KAJIAN MASJID AL-HIDAYAH*<br><br>'+
+    var copy_text = '*📢 INFO KAJIAN MASJID AL-HIDAYAH*<br><br>'+
     'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم<br><br>'+
     'Hadirilah Majelis Ilmu<br>'+
     'Kajian Islam Ilmiah Untuk Umum<br><br>'+
@@ -163,7 +163,7 @@
     'Dipersilahkan berbagi informasi ini, Semoga bermanfaat<br>'+
     'Jazaakumullahu Khairan';
 
-    var copy_text_tg = '<br><br><b>📢 INFO KAJIAN MASJID AL-HIDAYAH</b><br><br>'+
+    var copy_text_tg = '<b>📢 INFO KAJIAN MASJID AL-HIDAYAH</b><br><br>'+
     'بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم<br><br>'+
     'Hadirilah Majelis Ilmu<br>'+
     'Kajian Islam Ilmiah Untuk Umum<br><br>'+

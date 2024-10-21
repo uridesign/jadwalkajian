@@ -55,7 +55,7 @@
             <div class="col-12">
               <div class="mb-3">
                 <label for="">Preview Whatsapp</label>
-                <textarea name="code" id="code" class="preview"></textarea>
+                <textarea name="code" id="code" class="preview" disabled></textarea>
               </div>
               <div>
                 <a href="javascript:;" id="copy" class="btn button-1">Copy to WhatsApp</a>
