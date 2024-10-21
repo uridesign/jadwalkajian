@@ -43,6 +43,7 @@
                 $title    = $_REQUEST['title'];
                 $episode  = $_REQUEST['episode'];
                 $link     = $_REQUEST['link'];
+                $status   = $_REQUEST['status'];
                 $name     = $_REQUEST['name'];
                 $book     = $_REQUEST['book'];
 
@@ -51,6 +52,7 @@
                 title="'.$title.'", 
                 episode="'.$episode.'",
                 link="'.$link.'",
+                status="'.$status.'",
                 ustadz_id="'.$name.'",
                 kitab_id="'.$book.'" where id="'.$id.'"';
 
@@ -135,10 +137,19 @@
                     </select>
                   </div>
                 </div>
-                <div class="form-item col-12 col-md-12">
+                <div class="form-item col-12 col-md-6">
                   <label for="link">Link Kajian</label>
                   <div class="field-wrap">
                     <input type="text" name="link" id="link" value="<?php echo $row['link'];?>">
+                  </div>
+                </div>
+                <div class="form-item col-12 col-md-6">
+                  <label for="status">Status</label>
+                  <div class="field-wrap">
+                    <select name="status" id="status">
+                      <option value="0">Inactive</option>
+                      <option value="1" <?php echo ($row['status']) ? 'selected' : '';?>>Active</option>
+                    </select>
                   </div>
                 </div>
                 <div class="form-item col-12 col-md-12 mt-3">

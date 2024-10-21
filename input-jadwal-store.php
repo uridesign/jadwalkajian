@@ -37,7 +37,7 @@
               $name     = mysqli_real_escape_string($conn, $_REQUEST['name']);
               $link     = mysqli_real_escape_string($conn, $_REQUEST['link']);
 
-              $sql = "INSERT INTO kajian (date, sholat, title, episode, link, masjid_id, ustadz_id, kitab_id ) VALUES ('$date', '$time', '$title', '$episode', '$link', 1, $name, $book)";
+              $sql = "INSERT INTO kajian (date, sholat, title, episode, link, status, masjid_id, ustadz_id, kitab_id ) VALUES ('$date', '$time', '$title', '$episode', '$link', 1, 1, $name, $book)";
 
               if ($conn->query($sql) === TRUE) {
                 echo "New record created successfully";

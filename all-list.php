@@ -5,7 +5,7 @@
 
   $kajian=$_REQUEST['kajian'];
 
-  $query_kajian = "SELECT kajian.id, kajian.title, kajian.date, ustadz.name FROM kajian INNER JOIN ustadz ON ustadz.id = kajian.ustadz_id AND kajian.status=1 ORDER BY date"; 
+  $query_kajian = "SELECT kajian.id, kajian.title, kajian.date, ustadz.name FROM kajian INNER JOIN ustadz ON ustadz.id = kajian.ustadz_id ORDER BY status DESC, date"; 
   $result = $conn->query($query_kajian);
 
 ?>
@@ -64,7 +64,6 @@
             $conn->close();
           ?>
         </div>
-        <a href="./all-list.php">Show all</a>
       </div>
     </div>
   </main>
