@@ -3,19 +3,11 @@
   // include('includes/session_check.php');
   $page_name = 'broadcast';
 
-  // $apiToken = "5163636753:AAFfQCA9MAGxLUvZa8ZBhOHTPQNPQ_MyKp4";
-
-  // $data = [
-  //   'chat_id' => '@masjidalhidayahkapuk',
-  //   'parse_mode' => 'html',
-  //   'text' => $message
-  // ];
-
-  // $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );
-
   $botApiToken = '5163636753:AAFfQCA9MAGxLUvZa8ZBhOHTPQNPQ_MyKp4';
   $channelId ='@masjidalhidayahkapuk';
   $message = $_POST['code_tg'];
+
+  echo $message;
 
   $query = http_build_query([
     'chat_id' => $channelId,

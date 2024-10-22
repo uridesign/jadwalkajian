@@ -54,17 +54,17 @@
             <div class="col-12 mb-3 col-md-6 mb-md-0">
               <div class="mb-3">
                 <label for="">Preview Whatsapp</label>
-                <textarea name="code" id="code" class="preview" disabled></textarea>
+                <textarea name="code" id="code" class="preview" readonly></textarea>
               </div>
               <div>
                 <a href="javascript:;" id="copy" class="btn button-1">Copy to WhatsApp</a>
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <form id="preview_send_tg" action="post_kajian.php" method="POST">
+              <form id="preview_send_tg" action="./post_kajian.php" method="POST">
                 <div class="mb-3">
                   <label for="">Preview Telegram</label>
-                  <textarea name="code_tg" id="code_tg" class="preview" disabled></textarea>
+                  <textarea name="code_tg" id="code_tg" class="preview" readonly></textarea>
                 </div>
                 <div>
                   <button type="submit" class="btn button-1">Send to Telegram</button>
