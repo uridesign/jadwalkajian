@@ -7,8 +7,6 @@
   $channelId ='@masjidalhidayahkapuk';
   $message = $_POST['code_tg'];
 
-  echo $message;
-
   $query = http_build_query([
     'chat_id' => $channelId,
     "parse_mode" => "html",
