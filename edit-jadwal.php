@@ -78,11 +78,11 @@
                   <div class="field-wrap">
                     <select name="time" id="time">
                       <option value="">- Lewati jika menggunakan jam -</option>
-                      <option value="Subuh" <?php echo ( $row['sholat'] = 'Subuh' ) ? 'selected' : '' ;?>>Ba'da Sholat Subuh</option>
-                      <option value="Dzuhur" <?php echo ( $row['sholat'] = 'Dzuhur' ) ? 'selected' : '' ;?>>Ba'da Sholat Dzuhur</option>
-                      <option value="Ashar" <?php echo ( $row['sholat'] = 'Ashar' ) ? 'selected' : '' ;?>>Ba'da Sholat Ashar</option>
-                      <option value="Maghrib" <?php echo ( $row['sholat'] = 'Maghrib' ) ? 'selected' : '' ;?>>Ba'da Sholat Maghrib</option>
-                      <option value="Isya" <?php echo ( $row['sholat'] = 'Isya' ) ? 'selected' : '' ;?>>Ba'da Sholat Isya</option>
+                      <option value="Subuh" <?php echo ( $row['sholat'] == 'Subuh' ) ? 'selected' : '' ;?>>Ba'da Sholat Subuh</option>
+                      <option value="Dzuhur" <?php echo ( $row['sholat'] == 'Dzuhur' ) ? 'selected' : '' ;?>>Ba'da Sholat Dzuhur</option>
+                      <option value="Ashar" <?php echo ( $row['sholat'] == 'Ashar' ) ? 'selected' : '' ;?>>Ba'da Sholat Ashar</option>
+                      <option value="Maghrib" <?php echo ( $row['sholat'] == 'Maghrib' ) ? 'selected' : '' ;?>>Ba'da Sholat Maghrib</option>
+                      <option value="Isya" <?php echo ( $row['sholat'] == 'Isya' ) ? 'selected' : '' ;?>>Ba'da Sholat Isya</option>
                     </select>
                   </div>
                 </div>
