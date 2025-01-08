@@ -27,7 +27,7 @@
   <main>
     <div class="py-5">
       <div class="wrapper">
-        <h1>Input Jadwal</h1>
+        <h1>Input Ustadz</h1>
         <div class="row justify-content-center mt-5">
           <div class="col-md-8">
             <form action="./input-ustadz-store.php" class="form">
