@@ -14,7 +14,8 @@ textarea.preview {
   }
 
   input[type="text"],
-  select {
+  select,
+  textarea {
     width: 100%;
     border: 1px solid $color-1;
   }
@@ -25,5 +26,9 @@ textarea.preview {
 
   select {
     padding: 1.018em 17px;
+  }
+
+  textarea {
+    padding: 1em 20px;
   }
 }

@@ -27,6 +27,12 @@
   @at-root button#{&} {
     padding: 15px 20px;
   }
+  &._bg-danger {
+    background-color: #cf1d1d;
+    &:hover {
+      background-color: darken( #cf1d1d, 10);
+    }
+  }
 }
 
 .btn.disabled {
