@@ -140,7 +140,7 @@
     'Link lokasi: https://maps.app.goo.gl/bAwDrrUFeu5FJzuS9<br><br>'+
     '_☎ Informasi Lanjut_<br>'+ 
     '*Ikhwan*:<br>'+ 
-    '081295562662<br>08129898393<br><br>'+
+    '081295562662<br>085283515225<br><br>'+
     '*Akhwat*:<br>'+
     '081219544878<br>082110150517<br><br>'+
     '_Social Media_<br>'+ 
