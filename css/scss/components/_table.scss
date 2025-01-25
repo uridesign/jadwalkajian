@@ -1,0 +1,44 @@
+table.data_list {
+  width: 100%;
+  border: 0;
+  thead {
+    tr.dtl-header {
+      th {
+        background-color: #2a598c;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+      }
+    }
+  }
+  tbody {
+    tr.dtl-item {
+      &:nth-child(2n+1) {
+        td {
+          background-color: #fafafa;
+        }
+      }
+      td {
+        background-color: #ebebeb;
+        height: 65px;
+        padding: .5em 1em;
+        border: 0;
+        p {
+          margin: 0;
+        }
+        &.dtl-action {
+          text-align: center;
+          a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            color: #fff;
+            line-height: 2;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
