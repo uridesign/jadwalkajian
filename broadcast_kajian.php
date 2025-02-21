@@ -1,4 +1,5 @@
 <?php
+  include('includes/session_check_nologin.php');
   include('includes/connection.php');
   
   $page_name = 'lihat_jadwal';
@@ -61,15 +62,17 @@
               </div>
             </div>
             <div class="col-12 col-md-6">
-              <form id="preview_send_tg" action="./post_kajian.php" method="POST">
-                <div class="mb-3">
-                  <label for="">Preview Telegram</label>
-                  <textarea name="code_tg" id="code_tg" class="preview" readonly></textarea>
-                </div>
-                <div>
-                  <button type="submit" class="btn button-1">Send to Telegram</button>
-                </div>
-              </form>
+              <?php if ( isset($_SESSION["loggedin"]) ) {?>
+                <form id="preview_send_tg" action="./post_kajian.php" method="POST">
+                  <div class="mb-3">
+                    <label for="">Preview Telegram</label>
+                    <textarea name="code_tg" id="code_tg" class="preview" readonly></textarea>
+                  </div>
+                  <div>
+                    <button type="submit" class="btn button-1">Send to Telegram</button>
+                  </div>
+                </form>
+              <?php } ?>
             </div>
           </div>
         </div>

@@ -14,13 +14,15 @@ textarea.preview {
   }
 
   input[type="text"],
+  input[type="password"],
   select,
   textarea {
     width: 100%;
     border: 1px solid $color-1;
   }
 
-  input[type="text"] {
+  input[type="text"],
+  input[type="password"] {
     padding: 0.8645em 20px;
   }
 

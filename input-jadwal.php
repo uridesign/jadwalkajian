@@ -1,4 +1,5 @@
 <?php
+  include('includes/session_check.php');
   include('includes/connection.php');
   
   $page_name = 'input_jadwal';

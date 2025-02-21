@@ -1,4 +1,5 @@
 <?php
+  include('includes/session_check_nologin.php');
   include('includes/connection.php');
   
   $page_name = 'ustadz';
@@ -54,7 +55,9 @@
               </td>
               <td class="dtl-action">
                 <a class="link-edit" href="./edit-ustadz.php?id=<?php echo $row['id']?>" title="Edit"><i class="fa-regular fa-pen-to-square"></i></a>
-                <a class="link-delete" href="./delete-ustadz.php?id=<?php echo $row['id']?>" title="Delete" onclick="return confirm('Anda yakin ingin menghapus data ini?')"><i class="fa-regular fa-trash-can" ></i></a>
+                <?php if ( isset($_SESSION["loggedin"]) ) {?>
+                  <a class="link-delete" href="./delete-ustadz.php?id=<?php echo $row['id']?>" title="Delete" onclick="return confirm('Anda yakin ingin menghapus data ini?')"><i class="fa-regular fa-trash-can" ></i></a>
+                <?php } ?>
               </td>
             </tr>
 

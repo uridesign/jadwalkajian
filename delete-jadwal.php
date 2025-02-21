@@ -1,5 +1,5 @@
 <?php
-
+  require('includes/session_check.php');
   require('includes/connection.php');
 
   $id=$_REQUEST['id'];
