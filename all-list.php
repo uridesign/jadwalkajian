@@ -1,4 +1,5 @@
 <?php
+  include('includes/session_check_nologin.php');
   include('includes/connection.php');
   
   $page_name = 'lihat_jadwal';
@@ -51,7 +52,9 @@
                   <a href="./broadcast_live.php?kajian=<?php echo $row['id']?>" class="btn button-1">Broadcast Live</a>
                   <div class="bottom-panel">
                     <a href="./edit-jadwal.php?id=<?php echo $row['id']?>"><i class="fa-regular fa-pen-to-square"></i></a>
-                    <a href="./delete-jadwal.php?id=<?php echo $row['id']?>" onclick="return confirm('Anda yakin ingin menghapus data ini?')"><i class="fa-regular fa-trash-can" ></i></a>
+                    <?php if ( isset($_SESSION["loggedin"]) ) {?>
+                      <a href="./delete-jadwal.php?id=<?php echo $row['id']?>" onclick="return confirm('Anda yakin ingin menghapus data ini?')"><i class="fa-regular fa-trash-can" ></i></a>
+                    <?php } ?>
                   </div>
                 </div>
               </div>
